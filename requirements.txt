@@ -1,0 +1,7 @@
+async-timeout==3.0.1
+decorator==4.4.2
+discord==1.7.3
+discord.py==1.7.3
+requests==2.25.1
+selenium==3.141.0
+DateTime==4.3
