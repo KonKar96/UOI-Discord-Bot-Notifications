@@ -159,7 +159,7 @@ def leitourgika_systimata(driver, array, course_name):
 
 
 def anaktisi_pliroforias(driver, array, course_name):
-    driver.get("http://www.cs.uoi.gr/~pitoura/courses/ap/ap21/")
+    driver.get("http://www.cs.uoi.gr/~pitoura/courses/ap/ap22/")
     sleep(2)
     driver.refresh()
     body = find(driver, "//body").text.split("\n")
