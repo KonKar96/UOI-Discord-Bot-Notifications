@@ -556,13 +556,17 @@ if __name__ == "__main__":
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-sh-usage")
     options.add_argument("--headless")
+    try:
+        "started"
+        x = "1" + 1
+    except Exception as e:
+        "restarting"
 
-
-    while True:
-        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=options)
-        main(driver)
-        driver.close()
-        driver.quit()
-        print("Restarting Driver")
-        telegram_bot_sendtext("Restarting Driver")
-        time.sleep(5)
+#     while True:
+#         driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=options)
+#         main(driver)
+#         driver.close()
+#         driver.quit()
+#         print("Restarting Driver")
+#         telegram_bot_sendtext("Restarting Driver")
+#         time.sleep(5)
