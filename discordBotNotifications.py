@@ -556,11 +556,9 @@ if __name__ == "__main__":
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-sh-usage")
     options.add_argument("--headless")
-    try:
-        print("started")
-        x = "1" + 1
-    except Exception as e:
-        print("restarting")
+    
+    print("started")
+    x = "1" + 1
 
 #     while True:
 #         driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=options)
