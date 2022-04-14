@@ -288,7 +288,7 @@ def anaptixi_logismikou_2(driver, array, course_name):
 
 
 def parallila_systimata(driver, array, course_name):
-    driver.get("https://www.cse.uoi.gr/~dimako/teaching/spring21.html")
+    driver.get("https://www.cse.uoi.gr/~dimako/teaching/spring22.html")
     sleep(2)
     driver.refresh()
     if find(driver, "//h4[contains(text(),'Ανακοινωσεις')]") == None:
